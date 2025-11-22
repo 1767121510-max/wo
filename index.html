@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#ff9eb0">
+    <meta name="description" content="给我亲爱的唐荣宝宝的专属页面，充满爱和惊喜">
+    <meta name="author" content="最爱唐荣的人">
+    <meta property="og:title" content="给我亲爱的唐荣宝宝">
+    <meta property="og:description" content="专属的浪漫互动页面">
+    <meta property="og:type" content="website">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+    <title>给我亲爱的唐荣宝宝</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="greeting">我们相识七天，我希望以后每一个七天都有你。</h1>
+            <p id="date-display"></p>
+        </header>
+        
+        <main class="content">
+            <section class="love-message">
+                <p id="love-text">我想告诉你...</p>
+            </section>
+            
+            <section class="interactive-area">
+                <button id="surprise-btn" class="btn" aria-label="点击给你惊喜">点击给你惊喜</button>
+                <button id="compliment-btn" class="btn" aria-label="说句好听的">说句好听的</button>
+                <button id="hug-btn" class="btn" aria-label="这里有个小请求">这里有个小请求</button>
+            </section>
+            
+            <section class="photo-gallery">
+                <div class="photos-container">
+                    <!-- 这里将显示随机照片 -->
+                </div>
+            </section>
+            
+            <section class="quote-section">
+                <p id="random-quote">点击按钮获取一句暖心话</p>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>爱你的人 ❤️ 永远在这里</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- 防止GitHub Pages缓存问题 -->
+    <script>
+        // 确保页面加载最新内容
+        if (window.location.href.includes('github.io')) {
+            // 禁用缓存
+            window.onpageshow = function(event) {
+                if (event.persisted) {
+                    window.location.reload();
+                }
+            };
+        }
+    </script>
+</body>
+</html>
